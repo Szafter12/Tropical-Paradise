@@ -109,6 +109,60 @@ body {
   transition-delay: 0.1s;
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  background-image: linear-gradient(45deg, rgb(20, 105, 241), rgb(42, 10, 184));
+  z-index: 100;
+}
+.nav--active {
+  transform: translateX(0);
+}
+.nav__item {
+  position: relative;
+  display: block;
+  margin: 0.5em 0;
+  padding: 0.5em 2em;
+  font-size: 2.8rem;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.nav__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #0fe29c;
+  transition: width 0.4s;
+  z-index: -1;
+}
+.nav__item:hover::before {
+  width: 100%;
+}
+
+@keyframes navItemAnimation {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.nav-item-animation {
+  animation: navItemAnimation 1s both;
+}
+
 .header {
   position: relative;
   display: flex;
