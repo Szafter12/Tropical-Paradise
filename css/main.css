@@ -1,6 +1,6 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 2em;
   width: 100%;
   max-width: 1200px;
 }
@@ -46,6 +46,37 @@
   transform-origin: left;
 }
 
+.section-heading {
+  position: relative;
+  margin-bottom: 2em;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  color: #1755e7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-padding {
+  padding: 6em 0;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .section-padding {
+    padding: 8em 0;
+  }
+}
+@media (min-width: 992px) {
+  .section-heading {
+    font-size: 4.8rem;
+  }
+  .section-padding {
+    padding: 10em 0;
+  }
+}
 *,
 *::before,
 *::after {
@@ -202,6 +233,61 @@ body {
   background-color: #eee;
 }
 
+.dreams__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+.dreams__img {
+  width: 100%;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+.dreams__title {
+  margin-bottom: 0.5em;
+}
+.dreams__text {
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  position: relative;
+  padding: 10em 2em;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/tachiti-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  margin-bottom: 0.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 4.8rem;
+}
+.hero-img__text {
+  padding: 1em 0;
+}
+
+@media (min-width: 576px) {
+  .dreams__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dreams__box-right {
+    flex-direction: row-reverse;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+  .dreams__box-img {
+    width: 40%;
+  }
+}
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
@@ -212,6 +298,19 @@ body {
   }
   .header__btn {
     font-size: 1.8rem;
+  }
+  .dreams__text {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 30rem 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .hero-img__text {
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 992px) {
@@ -224,5 +323,28 @@ body {
   }
   .header__heading {
     font-size: 10rem;
+  }
+  .nav__item {
+    font-size: 4.8rem;
+  }
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 2.5em;
+  }
+  .hero-img {
+    padding: 40rem 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/tachiti-big.jpg");
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=main.css.map */
