@@ -36,11 +36,12 @@ body {
 		border-radius: 8px;
 	}
 
-    &:hover {
-        .burger-btn__bars::after, .burger-btn__bars::before {
-            width: 100%;
-        }
-    }
+	&:hover {
+		.burger-btn__bars::after,
+		.burger-btn__bars::before {
+			width: 100%;
+		}
+	}
 
 	&__box {
 		position: relative;
@@ -54,18 +55,60 @@ body {
 		@include burgerBtn;
 	}
 
-    &__bars {
-        width: 100%;
+	&__bars {
+		width: 100%;
 
-        &::after {
-            top: 13px;
-            width: 60%;
-        }
+		&::after {
+			top: 12px;
+			width: 60%;
+		}
 
-        &::before {
-            top: 27px;
-            width: 30%;
-            transition-delay: 0.1s;
-        }
-    }
+		&::before {
+			top: 24px;
+			width: 30%;
+			transition-delay: 0.1s;
+		}
+	}
+}
+
+// header
+
+.header {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	height: 75vh;
+	color: $pure-white;
+	text-align: center;
+	@include heroImages('../img/header-small.jpg');
+	background-attachment: scroll;
+
+	&__heading {
+		font-family: 'Dancing Script', cursive;
+		font-size: 9.8rem;
+		font-weight: 300;
+	}
+
+	&__text {
+		font-size: 1.4rem;
+	}
+
+	&__btn {
+		margin-top: 2em;
+		padding: 0.8em 1.6em;
+		background: $pure-white;
+		border: none;
+		border-radius: 8px;
+		color: $dark;
+		text-decoration: none;
+		font-weight: 600;
+		cursor: pointer;
+
+		&::before {
+			background-color: $light-white;
+		}
+	}
 }
