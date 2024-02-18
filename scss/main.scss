@@ -88,7 +88,7 @@ body {
 
 	&__heading {
 		font-family: 'Dancing Script', cursive;
-		font-size: 9.8rem;
+		font-size: 4.8rem;
 		font-weight: 300;
 	}
 
@@ -97,8 +97,8 @@ body {
 	}
 
 	&__btn {
-		margin-top: 2em;
-		padding: 0.8em 1.6em;
+		margin-top: 5em;
+		padding: 0.6em 1.2em;
 		background: $pure-white;
 		border: none;
 		border-radius: 8px;
@@ -109,6 +109,42 @@ body {
 
 		&::before {
 			background-color: $light-white;
+		}
+	}
+}
+
+// ****************
+// MEDIA
+// ****************
+
+@media (min-width: 768px) {
+	.white-block {
+		height: 50px;
+		width: 45%;
+	}
+
+	.header {
+		&__heading {
+			font-size: 6.8rem;
+		}
+
+		&__btn {
+			font-size: 1.8rem;
+		}
+	}
+}
+
+@media(min-width: 992px) {
+	.burger-btn {
+		top: 50px;
+		right: 50px;
+	}
+
+	.header {
+		background-image: $blue-gradient, url('../img/header-big.jpg');
+
+		&__heading {
+			font-size: 10rem;
 		}
 	}
 }
