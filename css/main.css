@@ -12,7 +12,7 @@
   background-color: #fff;
 }
 .white-block-left {
-  bottom: 0;
+  bottom: -2px;
   left: -50px;
   transform: skew(45deg);
 }
