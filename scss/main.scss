@@ -130,6 +130,12 @@ body {
 	animation: navItemAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
 // header
 
 .header {
@@ -689,7 +695,6 @@ body {
 				&:hover {
 					color: $main-color;
 				}
-				
 			}
 		}
 	}
